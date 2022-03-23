@@ -2,9 +2,7 @@ Stroka = input('Введите текст: ')
 for i in (Stroka):
     print(i)
 
-if i == "с":
-    print("Есть буква С(Русская)")
-elif i == "С":
+if 'с' in Stroka or 'С' in Stroka:
     print("Есть буква С(Русская)")
 else: print("Нет буквы С(Русской)")
 
