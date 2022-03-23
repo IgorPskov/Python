@@ -2,12 +2,14 @@ Stroka = input('Введите текст: ')
 for i in (Stroka):
     print(i)
 
-Bez_tretyey = Stroka [:2] + Stroka [3:]
-print(Bez_tretyey)
-
 if i == "с":
     print("Есть буква С(Русская)")
+elif i == "С":
+    print("Есть буква С(Русская)")
 else: print("Нет буквы С(Русской)")
+
+Bez_tretyey = Stroka [:2] + Stroka [3:]
+print(Bez_tretyey)
 
 print(len(Stroka))
 
