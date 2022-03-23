@@ -58,7 +58,7 @@ elif nachalo == "!":
     print(c)
 
 elif nachalo == "arccos":
-    a = float(input('Введите число a в промежутке от [-1;1]: '))
+    a = float(input('Введите число a в промежутке [-1;1]: '))
     c = math.acos(a)
     print("Ответ:")
     print(c)
