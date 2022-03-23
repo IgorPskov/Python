@@ -1,0 +1,15 @@
+Stroka = input('Введите текст: ')
+for i in (Stroka):
+    print(i)
+
+Bez_tretyey = Stroka [:2] + Stroka [3:]
+print(Bez_tretyey)
+
+if i == "с":
+    print("Есть буква С(Русская)")
+else: print("Нет буквы С(Русской)")
+
+print(len(Stroka))
+
+Bez_Posledney = Stroka [0:-1]
+print(Bez_Posledney)
