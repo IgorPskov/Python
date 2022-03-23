@@ -7,9 +7,9 @@ if 'с' in Stroka or 'С' in Stroka:
 else: print("Нет буквы С(Русской)")
 
 Bez_tretyey = Stroka [:2] + Stroka [3:]
-print(Bez_tretyey)
+print('Без третьей буквы:' ,Bez_tretyey)
 
-print(len(Stroka))
+print('Символов: ',len(Stroka))
 
 Bez_Posledney = Stroka [0:-1]
-print(Bez_Posledney)
+print('Без последней буквы: ',Bez_Posledney)
