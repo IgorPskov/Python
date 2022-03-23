@@ -1,4 +1,4 @@
-mport math
+import math
 import random
 nachalo = input('Выберите операцию, которую вы хотите произвести: +, -, /, *, ^, random, module, !, arccos: ')
 
