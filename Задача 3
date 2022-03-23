@@ -1,0 +1,66 @@
+mport math
+import random
+nachalo = input('Выберите операцию, которую вы хотите произвести: +, -, /, *, ^, random, module, !, arccos: ')
+
+if nachalo == "+":
+    a = float(input('Введите число a: '))
+    b = float(input('Введите число b: '))
+    c = a+b
+    print("Ответ:")
+    print(c)
+
+elif nachalo == "-":
+    a = float(input('Введите число a: '))
+    b = float(input('Введите число b: '))
+    c = a - b
+    print("Ответ:")
+    print(c)
+
+elif nachalo == "/":
+    a = float(input('Введите число a: '))
+    b = float(input('Введите число b: '))
+    c = a / b
+    print("Ответ:")
+    print(c)
+
+elif nachalo == "*":
+    a = float(input('Введите число a: '))
+    b = float(input('Введите число b: '))
+    c = a * b
+    print("Ответ:")
+    print(c)
+
+elif nachalo == "^":
+    a = float(input('Введите число a: '))
+    b = float(input('Введите число b: '))
+    c = math.pow(a,b)
+    print("Ответ:")
+    print(c)
+
+elif nachalo == "random":
+    c = (random.random())
+    print("Ответ:")
+    print(c)
+
+
+elif nachalo == "module":
+    a = float(input('Введите число a: '))
+    c = abs(a)
+    print("Ответ:")
+    print(c)
+
+elif nachalo == "!":
+    a = int(input('Введите натуральное число a: '))
+    c = 1
+    for i in range(2, a + 1):
+        c *= i
+    print("Ответ:")
+    print(c)
+
+elif nachalo == "arccos":
+    a = float(input('Введите число a в промежутке от [-1;1]: '))
+    c = math.acos(a)
+    print("Ответ:")
+    print(c)
+
+else: print("Ошибка. Попробуйте еще раз")
