@@ -1,0 +1,19 @@
+Slova = input('Введите слова: ')
+result = Slova.split()
+print(result)
+print("Количество слов в списке:")
+print(len(result))
+vopros = input("Можно ли сформировать 2-ой список с таким же количеством символов? (Да/Нет): ")
+if vopros == "да" or vopros == "Да":
+    print('Введите ',len(result),' символа(-ов): ')
+    Simvoli = input()
+    result1 = Simvoli.split()
+    if (len(result1)) != (len(result)):
+        print('Количество символов не соответствует количеству слов')
+        exit()
+    else: dictionary = dict(zip(result, result1))
+    print(dictionary)
+
+elif vopros == "Нет" or vopros == "нет":
+    print("Ладно, не буду")
+else:print("Не понял")
