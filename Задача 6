@@ -91,6 +91,11 @@ elif nachalo == "arccos":
 
 else: print("Ошибка. Попробуйте еще раз")
 
+
+
+
+
+
 #Задача 5 через функции:
 Slova = input('Введите слова: ')
 def split(x):
