@@ -1,0 +1,121 @@
+#Калькулятор через функции:
+import math
+import random
+nachalo = input('Выберите операцию, которую вы хотите произвести: +, -, /, *, ^, random, module, !, arccos: ')
+
+if nachalo == "+":
+    def sum(x, y):
+        res = x + y
+        return res
+    a = float(input('Введите число a: '))
+    b = float(input('Введите число b: '))
+    c = sum(a, b)
+    print("Ответ:")
+    print(c)
+
+elif nachalo == "-":
+    def sub(x, y):
+        res = x - y
+        return res
+    a = float(input('Введите число a: '))
+    b = float(input('Введите число b: '))
+    c = sub(a, b)
+    print("Ответ:")
+    print(c)
+
+elif nachalo == "/":
+    def div(x, y):
+        res = x / y
+        return res
+    a = float(input('Введите число a: '))
+    b = float(input('Введите число b: '))
+    c = div(a, b)
+    print("Ответ:")
+    print(c)
+
+elif nachalo == "*":
+    def mul(x, y):
+        res = x * y
+        return res
+    a = float(input('Введите число a: '))
+    b = float(input('Введите число b: '))
+    c = mul(a, b)
+    print("Ответ:")
+    print(c)
+
+elif nachalo == "^":
+    def exp(x, y):
+        res = math.pow(x,y)
+        return res
+    a = float(input('Введите число a: '))
+    b = float(input('Введите число b: '))
+    c = exp(a, b)
+    print("Ответ:")
+    print(c)
+
+elif nachalo == "random":
+    c = (random.random())
+    print("Ответ:")
+    print(c)
+
+
+elif nachalo == "module":
+    def mod(x):
+        res = abs(x)
+        return res
+    a = float(input('Введите число a: '))
+    c = mod(a)
+    print("Ответ:")
+    print(c)
+
+elif nachalo == "!":
+    a = int(input('Введите натуральное число a: '))
+    def fact(x):
+        if x == 0:
+            return 1
+        else:
+           return x * fact(x - 1)
+    ans = fact(a)
+    print("Ответ:")
+    print(ans)
+
+
+elif nachalo == "arccos":
+    def arccos(x):
+        res = math.acos(a)
+        return res
+    a = float(input('Введите число a в промежутке [-1;1]: '))
+    c = arccos(a)
+    print("Ответ:")
+    print(c)
+
+else: print("Ошибка. Попробуйте еще раз")
+
+#Задача 5 через функции:
+Slova = input('Введите слова: ')
+def split(x):
+    res = x.split()
+    return res
+result = split(Slova)
+print(result)
+print("Количество слов в списке:")
+def length(x):
+    res = len(x)
+    return res
+dlina = length(result)
+print(dlina)
+vopros = input("Можно ли сформировать 2-ой список с таким же количеством символов? (Да/Нет): ")
+if vopros == "да" or vopros == "Да":
+    print('Введите ',len(result),' символа(-ов): ')
+    Simvoli = input()
+    result1 = split(Simvoli)
+    dlina1 = length(result1)
+    if (dlina1) != (dlina):
+        print('Количество символов не соответствует количеству слов')
+        exit()
+    else: dictionary = dict(zip(result, result1))
+    print(dictionary)
+
+elif vopros == "Нет" or vopros == "нет":
+    print("Ладно, не буду")
+else:print("Не понял")
