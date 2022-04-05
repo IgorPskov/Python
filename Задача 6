@@ -71,10 +71,8 @@ elif nachalo == "module":
 elif nachalo == "!":
     a = int(input('Введите натуральное число a: '))
     def fact(x):
-        if x == 0:
-            return 1
-        else:
-           return x * fact(x - 1)
+        res = math.factorial(x)
+        return res
     ans = fact(a)
     print("Ответ:")
     print(ans)
