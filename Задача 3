@@ -51,9 +51,7 @@ elif nachalo == "module":
 
 elif nachalo == "!":
     a = int(input('Введите натуральное число a: '))
-    c = 1
-    for i in range(2, a + 1):
-        c *= i
+    c = math.factorial(a)
     print("Ответ:")
     print(c)
 
