@@ -1,13 +1,13 @@
-Slova = input('Введите слова: ')
-result = Slova.split()
+slova = input('Введите слова: ')
+result = slova.split()
 print(result)
 print("Количество слов в списке:")
 print(len(result))
 vopros = input("Можно ли сформировать 2-ой список с таким же количеством символов? (Да/Нет): ")
 if vopros == "да" or vopros == "Да":
-    print('Введите ',len(result),' символа(-ов): ')
-    Simvoli = input()
-    result1 = Simvoli.split()
+    print('Введите ', len(result), ' символа(-ов): ')
+    simvoli = input()
+    result1 = simvoli.split()
     if (len(result1)) != (len(result)):
         print('Количество символов не соответствует количеству слов')
         exit()
