@@ -1,8 +1,8 @@
 border_number = int(input("Введите пограничное число: "))
 random_number = int(input("Введите произвольное число: "))
 if random_number < border_number:
-    print ("Число меньше пограничного")
+    print("Число меньше пограничного")
 elif random_number > 3 * border_number:
-    print ("Число больше пограничного более, чем в 3 раза")
+    print("Число больше пограничного более, чем в 3 раза")
 elif random_number > border_number:
-    print ("Число больше пограничного")
+    print("Число больше пограничного")
