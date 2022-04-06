@@ -1,15 +1,15 @@
-Stroka = input('Введите текст: ')
-for i in (Stroka):
+stroka = input('Введите текст: ')
+for i in stroka:
     print(i)
 
-if 'с' in Stroka or 'С' in Stroka:
+if 'с' in stroka or 'С' in stroka:
     print("Есть буква С(Русская)")
 else: print("Нет буквы С(Русской)")
 
-Bez_tretyey = Stroka [:2] + Stroka [3:]
-print('Без третьей буквы:' ,Bez_tretyey)
+bez_tretyey = stroka [:2] + stroka [3:]
+print('Без третьей буквы:', bez_tretyey)
 
-print('Символов: ',len(Stroka))
+print('Символов: ', len(stroka))
 
-Bez_Posledney = Stroka [0:-1]
-print('Без последней буквы: ',Bez_Posledney)
+bez_posledney = stroka[0:-1]
+print('Без последней буквы: ', bez_posledney)
