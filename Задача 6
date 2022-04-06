@@ -95,11 +95,11 @@ else: print("Ошибка. Попробуйте еще раз")
 
 
 #Задача 5 через функции:
-Slova = input('Введите слова: ')
+slova = input('Введите слова: ')
 def split(x):
     res = x.split()
     return res
-result = split(Slova)
+result = split(slova)
 print(result)
 print("Количество слов в списке:")
 def length(x):
@@ -109,9 +109,9 @@ dlina = length(result)
 print(dlina)
 vopros = input("Можно ли сформировать 2-ой список с таким же количеством символов? (Да/Нет): ")
 if vopros == "да" or vopros == "Да":
-    print('Введите ',len(result),' символа(-ов): ')
-    Simvoli = input()
-    result1 = split(Simvoli)
+    print('Введите ', len(result), ' символа(-ов): ')
+    simvoli = input()
+    result1 = split(simvoli)
     dlina1 = length(result1)
     if (dlina1) != (dlina):
         print('Количество символов не соответствует количеству слов')
