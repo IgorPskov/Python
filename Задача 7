@@ -3,7 +3,6 @@ import random
 
 
 class Calculator:
-    @staticmethod
     def sum(self, self1):
         def sum1(x, y):
             res = x + y
@@ -14,7 +13,6 @@ class Calculator:
         print("Ответ:")
         print(c)
 
-    @staticmethod
     def sub(self, self1):
         def sub1(x, y):
             res = x - y
@@ -25,7 +23,6 @@ class Calculator:
         print("Ответ:")
         print(c)
 
-    @staticmethod
     def div(self, self1):
         def div1(x, y):
             res = x / y
@@ -36,7 +33,6 @@ class Calculator:
         print("Ответ:")
         print(c)
 
-    @staticmethod
     def mul(self, self1):
         def mul1(x, y):
             res = x * y
@@ -47,7 +43,6 @@ class Calculator:
         print("Ответ:")
         print(c)
 
-    @staticmethod
     def exp(self, self1):
         def exp1(x, y):
             res = math.pow(x, y)
@@ -58,7 +53,6 @@ class Calculator:
         print("Ответ:")
         print(c)
 
-    @staticmethod
     def mod(self, self1):
         def mod1(x):
             res = abs(x)
@@ -68,7 +62,6 @@ class Calculator:
         print("Ответ:")
         print(c)
 
-    @staticmethod
     def fact(self, self1):
         def fact1(x):
             res = math.factorial(x)
@@ -78,7 +71,6 @@ class Calculator:
         print("Ответ:")
         print(ans)
 
-    @staticmethod
     def arccos(self, self1):
         def arccos1(x):
             res = math.acos(a)
