@@ -3,7 +3,8 @@ import random
 
 
 class Calculator:
-    def sum(self, nachalo):
+    @staticmethod
+    def sum(self, self1):
         def sum1(x, y):
             res = x + y
             return res
@@ -13,7 +14,8 @@ class Calculator:
         print("Ответ:")
         print(c)
 
-    def sub(self, nachalo):
+    @staticmethod
+    def sub(self, self1):
         def sub1(x, y):
             res = x - y
             return res
@@ -23,7 +25,8 @@ class Calculator:
         print("Ответ:")
         print(c)
 
-    def div(self, nachalo):
+    @staticmethod
+    def div(self, self1):
         def div1(x, y):
             res = x / y
             return res
@@ -33,7 +36,8 @@ class Calculator:
         print("Ответ:")
         print(c)
 
-    def mul(self, nachalo):
+    @staticmethod
+    def mul(self, self1):
         def mul1(x, y):
             res = x * y
             return res
@@ -43,7 +47,8 @@ class Calculator:
         print("Ответ:")
         print(c)
 
-    def exp(self, nachalo):
+    @staticmethod
+    def exp(self, self1):
         def exp1(x, y):
             res = math.pow(x, y)
             return res
@@ -53,7 +58,8 @@ class Calculator:
         print("Ответ:")
         print(c)
 
-    def mod(self, nachalo):
+    @staticmethod
+    def mod(self, self1):
         def mod1(x):
             res = abs(x)
             return res
@@ -62,7 +68,8 @@ class Calculator:
         print("Ответ:")
         print(c)
 
-    def fact(self, nachalo):
+    @staticmethod
+    def fact(self, self1):
         def fact1(x):
             res = math.factorial(x)
             return res
@@ -71,7 +78,8 @@ class Calculator:
         print("Ответ:")
         print(ans)
 
-    def arccos(self, nachalo):
+    @staticmethod
+    def arccos(self, self1):
         def arccos1(x):
             res = math.acos(a)
             return res
@@ -122,4 +130,5 @@ while True:
         calc = Calculator()
         calc.arccos(nachalo)
 
-    else: print("Ошибка. Попробуйте еще раз")
+    else: 
+        print("Ошибка. Попробуйте еще раз")
