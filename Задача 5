@@ -1,5 +1,5 @@
 slova = input('Введите слова: ')
-result = slova.split()
+result = set(slova.split())
 print(result)
 print("Количество слов в списке:")
 print(len(result))
