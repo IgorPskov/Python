@@ -116,10 +116,10 @@ while True:
 
     elif nachalo == "!":
         calc = Calculator()
-        calc.mod(nachalo)
+        calc.fact(nachalo)
 
     elif nachalo == "arccos":
         calc = Calculator()
-        calc.mod(nachalo)
+        calc.arccos(nachalo)
 
     else: print("Ошибка. Попробуйте еще раз")
