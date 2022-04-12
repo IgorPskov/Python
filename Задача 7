@@ -107,7 +107,7 @@ while True:
 
     elif nachalo == "*":
         calc = Calculator()
-        calc.calcul(nachalo)
+        calc.mul(nachalo)
 
     elif nachalo == "^":
         calc = Calculator()
