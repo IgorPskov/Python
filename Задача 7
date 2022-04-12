@@ -1,0 +1,125 @@
+import math
+import random
+
+
+class Calculator:
+    def sum(self, nachalo):
+        def sum1(x, y):
+            res = x + y
+            return res
+        a = float(input('Введите число a: '))
+        b = float(input('Введите число b: '))
+        c = sum1(a, b)
+        print("Ответ:")
+        print(c)
+
+    def sub(self, nachalo):
+        def sub1(x, y):
+            res = x - y
+            return res
+        a = float(input('Введите число a: '))
+        b = float(input('Введите число b: '))
+        c = sub1(a, b)
+        print("Ответ:")
+        print(c)
+
+    def div(self, nachalo):
+        def div1(x, y):
+            res = x / y
+            return res
+        a = float(input('Введите число a: '))
+        b = float(input('Введите число b: '))
+        c = div1(a, b)
+        print("Ответ:")
+        print(c)
+
+    def mul(self, nachalo):
+        def mul1(x, y):
+            res = x * y
+            return res
+        a = float(input('Введите число a: '))
+        b = float(input('Введите число b: '))
+        c = mul1(a, b)
+        print("Ответ:")
+        print(c)
+
+    def exp(self, nachalo):
+        def exp1(x, y):
+            res = math.pow(x, y)
+            return res
+        a = float(input('Введите число a: '))
+        b = float(input('Введите число b: '))
+        c = exp1(a, b)
+        print("Ответ:")
+        print(c)
+
+    def mod(self, nachalo):
+        def mod1(x):
+            res = abs(x)
+            return res
+        a = float(input('Введите число a: '))
+        c = mod1(a)
+        print("Ответ:")
+        print(c)
+
+    def fact(self, nachalo):
+        def fact1(x):
+            res = math.factorial(x)
+            return res
+        a = int(input('Введите натуральное число a: '))
+        ans = fact1(a)
+        print("Ответ:")
+        print(ans)
+
+    def arccos(self, nachalo):
+        def arccos1(x):
+            res = math.acos(a)
+            return res
+        a = float(input('Введите число a в промежутке [-1;1]: '))
+        c = arccos1(a)
+        print("Ответ:")
+        print(c)
+
+
+while True:
+
+    nachalo = input('Выберите операцию, которую вы хотите произвести: +, -, /, *, ^, random, module, !, arccos: ')
+
+    if nachalo == "+":
+        calc = Calculator()
+        calc.sum(nachalo)
+
+    elif nachalo == "-":
+        calc = Calculator()
+        calc.sub(nachalo)
+
+    elif nachalo == "/":
+        calc = Calculator()
+        calc.div(nachalo)
+
+    elif nachalo == "*":
+        calc = Calculator()
+        calc.calcul(nachalo)
+
+    elif nachalo == "^":
+        calc = Calculator()
+        calc.exp(nachalo)
+
+    elif nachalo == "random":
+        c = (random.random())
+        print("Ответ:")
+        print(c)
+
+    elif nachalo == "module":
+        calc = Calculator()
+        calc.mod(nachalo)
+
+    elif nachalo == "!":
+        calc = Calculator()
+        calc.mod(nachalo)
+
+    elif nachalo == "arccos":
+        calc = Calculator()
+        calc.mod(nachalo)
+
+    else: print("Ошибка. Попробуйте еще раз")
